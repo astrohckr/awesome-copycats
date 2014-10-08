@@ -52,6 +52,7 @@ run_once("urxvtd")
 run_once("unclutter")
 run_once("nm-applet")
 run_once("redshift-gtk")
+run_once("dropboxd")
 
 awful.util.spawn("xmodmap " .. os.getenv("HOME") .. "/.Xmodmap")
 awful.util.spawn("xbindkeys")
@@ -494,7 +495,6 @@ globalkeys = awful.util.table.join(
     -- Widgets popups
     awful.key({ altkey,           }, "c",      function () lain.widgets.calendar:show(7) end),
     awful.key({ altkey,           }, "h",      function () fswidget.show(7) end),
-    awful.key({ altkey,           }, "w",      function () yawn.show(7) end),
 
     -- ALSA volume control
     awful.key({ altkey }, "Up",
