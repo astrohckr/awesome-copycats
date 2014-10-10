@@ -188,7 +188,7 @@ batwidget = lain.widgets.bat({
     end
 })
 
--- ALSA volume
+-- PulseAudio volume
 volicon = wibox.widget.imagebox(beautiful.widget_vol)
 volumewidget = lain.widgets.alsa({
     settings = function()
