@@ -1,0 +1,4 @@
+[submodule "lain"]
+	path = lain
+	url = git@github.com:hckr/lain.git
+	branch = master
